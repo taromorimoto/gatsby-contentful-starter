@@ -1,0 +1,43 @@
+{
+  "name": "gatsby-contentful-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gatsby Contentful Starter",
+  "author": "Taro Morimoto",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "setup": "node ./bin/setup.js"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
+    "contentful-import": "^8.1.15",
+    "gatsby": "^3.7.1",
+    "gatsby-image": "^3.7.1",
+    "gatsby-plugin-gatsby-cloud": "^2.7.1",
+    "gatsby-plugin-image": "^1.7.1",
+    "gatsby-plugin-manifest": "^3.7.1",
+    "gatsby-plugin-react-helmet": "^4.7.1",
+    "gatsby-plugin-sharp": "^3.7.1",
+    "gatsby-plugin-sitemap": "^4.3.1",
+    "gatsby-plugin-styled-components": "^4.7.1",
+    "gatsby-source-contentful": "^5.7.1",
+    "gatsby-source-filesystem": "^3.7.1",
+    "gatsby-transformer-remark": "^4.4.1",
+    "gatsby-transformer-sharp": "^3.7.1",
+    "genero-design-system": "^4.0.0-beta.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^11.6.0"
+  }
+}
