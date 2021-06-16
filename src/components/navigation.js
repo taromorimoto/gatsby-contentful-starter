@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
 import styled from 'styled-components'
-import { GdsNavigation, GdsMenu } from 'genero-design-system/react'
 
 import breakpoints from '../templates/breakpoints'
 import { useLocation } from '../context/AppContext'
@@ -12,12 +11,12 @@ const Navigation = () => {
 
   return (
     <NavigationContainer role="navigation">
-      <GdsNavigation>
+      <gds-navigation>
         <a slot="logo" href="/" aria-label="Genero frontpage" rel="home">
           <Logo src="/images/logo.svg" alt="Genero Logo" width="159" height="48" />
         </a>
         <div slot="menu">
-          <GdsMenu key="123">
+          <gds-menu key="123">
             <gds-menu-item-nested slot="item" submenu-icon="❯">
               <a slot="link" href="#first">
                 <gds-menu-item>Services</gds-menu-item>
@@ -43,14 +42,14 @@ const Navigation = () => {
             <a slot="item" href="#4">
               <gds-menu-item>Contact</gds-menu-item>
             </a>
-          </GdsMenu>
+          </gds-menu>
         </div>
         <div slot="search">
           <gds-search-form collapsed action="https://www.google.com" query="q"></gds-search-form>
         </div>
         <div slot="desktop-extensions">
           <div aria-label="Language menu">
-            <GdsMenu key="321">
+            <gds-menu key="321">
               <a slot="item" href="#fi" aria-label="Finnish">
                 <gds-menu-item>FI</gds-menu-item>
               </a>
@@ -60,12 +59,12 @@ const Navigation = () => {
               <a slot="item" href="#en" aria-label="English">
                 <gds-menu-item>EN</gds-menu-item>
               </a>
-            </GdsMenu>
+            </gds-menu>
           </div>
         </div>
         <div slot="mobile-extensions">
           <div aria-label="Language menu">
-            <GdsMenu key="321">
+            <gds-menu key="321">
               <a slot="item" href="#fi">
                 <gds-menu-item>Finnish</gds-menu-item>
               </a>
@@ -75,10 +74,10 @@ const Navigation = () => {
               <a slot="item" href="#en">
                 <gds-menu-item>English</gds-menu-item>
               </a>
-            </GdsMenu>
+            </gds-menu>
           </div>
         </div>
-      </GdsNavigation>
+      </gds-navigation>
     </NavigationContainer>
   )
 }
